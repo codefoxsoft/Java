@@ -31,13 +31,6 @@ public class Problem1GUI extends JFrame {
         String input = textField.getText();
         int validDigits = 0;
 
-        // Logic preserved from C#: Checks if string CONTAINS specific digits (weird
-        // logic?)
-        // C# logic: if factor.Contains("2") ... else if ... else if ...
-        // Note: The C# logic used 'else if', so it only counts the FIRST match it finds
-        // in the chain logic.
-        // It does NOT count all occurrences. It increments 'fourofthese' by 1 at most.
-        // I will replicate exactly that behavior.
 
         if (input.contains("2"))
             validDigits++;
